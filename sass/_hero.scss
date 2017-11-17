@@ -1,0 +1,22 @@
+.hero {
+	width:100vw;
+	height:100vh;
+	max-width:100vw;
+	background:url(../img/hero@2x.png) no-repeat;
+	background-size:cover;
+	margin:0;
+	text-align:center;
+}
+
+.hero button {
+	border-radius: 4px;
+	border:0;
+	background-color: #9E83FC;
+	color: $light-gray;
+	font-family: 'Lato-Bold', sans-serif;
+	font-size: 16px;
+	padding:12px 20px;
+	outline:none;
+	margin:0 auto;
+	cursor: pointer;
+}

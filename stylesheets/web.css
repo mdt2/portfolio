@@ -1,0 +1,338 @@
+@import url('href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+/* line 1, ../sass/_generic.scss */
+body {
+  margin: 0;
+}
+
+/* Text */
+/* line 7, ../sass/_generic.scss */
+h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: #151815;
+}
+
+/* line 13, ../sass/_generic.scss */
+h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: #151815;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 32px 0;
+  margin: 0;
+}
+
+/* line 23, ../sass/_generic.scss */
+h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: #FCFCFC;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+/* line 32, ../sass/_generic.scss */
+h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  color: #151815;
+  margin-bottom: 10px;
+}
+
+/* line 39, ../sass/_generic.scss */
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  color: #151815;
+  margin-bottom: 10px;
+}
+
+/* line 46, ../sass/_generic.scss */
+.secondary {
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+  color: #939593;
+  margin-bottom: 10px;
+}
+
+/* Flexbox */
+/* line 55, ../sass/_generic.scss */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1024px;
+}
+
+/* line 62, ../sass/_generic.scss */
+.flex-item {
+  max-width: 100%;
+}
+
+/* line 1, ../sass/_body.scss */
+body {
+  background-color: #FCFCFC;
+}
+
+/* line 1, ../sass/_hero.scss */
+.hero {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  background: url(../img/hero@2x.png) no-repeat;
+  background-size: cover;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 11, ../sass/_hero.scss */
+.hero button {
+  border-radius: 4px;
+  border: 0;
+  background-color: #9E83FC;
+  color: #FCFCFC;
+  font-family: 'Lato-Bold', sans-serif;
+  font-size: 16px;
+  padding: 12px 20px;
+  outline: none;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* line 1, ../sass/_navigation.scss */
+header {
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 7, ../sass/_navigation.scss */
+.logo {
+  width: 64px;
+}
+
+/*.menu {
+	width:22px;
+	height:20px;
+}
+*/
+/* line 17, ../sass/_navigation.scss */
+header div.flex {
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+}
+
+/* line 23, ../sass/_navigation.scss */
+header ul {
+  list-style-type: none;
+}
+
+/* line 27, ../sass/_navigation.scss */
+header a {
+  text-decoration: none;
+  color: #C2BECC;
+}
+
+/* line 32, ../sass/_navigation.scss */
+header a:hover {
+  color: #9E83FC;
+}
+
+/* line 36, ../sass/_navigation.scss */
+header ul li.flex-item {
+  float: left;
+  padding-left: 32px;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+@media (max-width: 1024px) {
+  /* line 49, ../sass/_navigation.scss */
+  header .flex-item {
+    padding: 24px 0 0 24px;
+  }
+
+  /* line 53, ../sass/_navigation.scss */
+  header li.flex-item {
+    padding-right: 24px;
+  }
+}
+@media (max-width: 400px) {
+  /* line 62, ../sass/_navigation.scss */
+  .desktop-only {
+    display: none;
+  }
+}
+/* line 1, ../sass/_footer.scss */
+footer {
+  margin: 0;
+  margin: 0 auto;
+  padding: 32px;
+  background: url(../img/footer-bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* line 9, ../sass/_footer.scss */
+footer div.flex {
+  justify-content: space-between;
+  max-width: 1024px;
+  margin: 0;
+  margin: 0 auto;
+}
+
+/* line 16, ../sass/_footer.scss */
+footer .flex-item img {
+  width: 32px;
+  margin: 0 14px;
+}
+
+/* line 21, ../sass/_footer.scss */
+footer .flex-item img.margin-l-0 {
+  margin-left: 0;
+}
+
+/* line 25, ../sass/_footer.scss */
+footer .flex-item a {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  /* line 32, ../sass/_footer.scss */
+  footer {
+    padding: 16px;
+    text-align: center;
+  }
+
+  /* line 37, ../sass/_footer.scss */
+  footer div.flex {
+    max-width: 600px;
+    flex-wrap: wrap;
+  }
+
+  /* line 42, ../sass/_footer.scss */
+  footer .flex-item {
+    margin: 0 auto;
+    padding: 16px 0;
+  }
+}
+/* line 1, ../sass/_work.scss */
+.work {
+  width: 100vw;
+  max-width: 100vw;
+  background: url(../img/work-bg.jpg) no-repeat;
+  background-size: cover;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+/* line 11, ../sass/_work.scss */
+.work .flex {
+  margin: 0 auto;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+/* line 17, ../sass/_work.scss */
+.img-footer {
+  background-color: #151815;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* line 24, ../sass/_work.scss */
+.img-footer .flex-item {
+  width: 100%;
+  margin-top: 0;
+  overflow: hidden;
+  flex-grow: 1;
+  max-width: 320px;
+  justify-content: flex-start;
+  box-shadow: 0 2px 6px rgba(21, 24, 21, 0.2);
+}
+
+@media (max-width: 600px) {
+  /* line 37, ../sass/_work.scss */
+  .img-footer {
+    margin-right: 0;
+  }
+}
+/* line 1, ../sass/_about.scss */
+.about {
+  width: 100vw;
+  max-width: 100vw;
+  background: url(../img/work-bg.jpg) no-repeat;
+  background-size: cover;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 68px;
+}
+
+/* line 11, ../sass/_about.scss */
+.about > img {
+  max-width: 100vw;
+  margin-bottom: -120px;
+}
+
+/* line 16, ../sass/_about.scss */
+.about > img.phone-only {
+  display: none;
+}
+
+/* line 20, ../sass/_about.scss */
+.about > h1 {
+  color: #FCFCFC;
+  max-width: 1024px;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 900px) {
+  /* line 31, ../sass/_about.scss */
+  .about {
+    margin-bottom: 0;
+  }
+
+  /* line 35, ../sass/_about.scss */
+  .about > h1 {
+    padding: 24px;
+  }
+}
+@media (max-width: 650px) {
+  /* line 43, ../sass/_about.scss */
+  .about {
+    margin-bottom: 0;
+  }
+
+  /* line 47, ../sass/_about.scss */
+  .about > img {
+    margin-bottom: 0;
+  }
+
+  /* line 51, ../sass/_about.scss */
+  .about > h1 {
+    color: #151815;
+    text-shadow: none;
+    font-size: 12px;
+    padding: 24px;
+    letter-spacing: 0;
+  }
+
+  /* line 59, ../sass/_about.scss */
+  .about > img.desktop-only {
+    display: none;
+  }
+
+  /* line 63, ../sass/_about.scss */
+  .about > img.phone-only {
+    display: block;
+  }
+}

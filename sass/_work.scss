@@ -1,0 +1,41 @@
+.work {
+	width:100vw;
+	max-width:100vw;
+	background:url(../img/work-bg.jpg) no-repeat;
+	background-size:cover;
+	margin:0;
+	text-align:center;
+	padding-bottom:24px;
+}
+
+.work .flex {
+	margin:0 auto;
+	flex-wrap:wrap;
+	height:auto;
+}
+
+.img-footer {
+	background-color:$dark-gray;
+	margin-right:20px;
+	margin-bottom:20px;
+	border-radius: 0px 0px 4px 4px;
+}
+
+.img-footer .flex-item {
+	width:100%;
+	margin-top:0;
+	overflow:hidden;
+	flex-grow:1;
+	max-width:320px;
+	justify-content: flex-start;
+	box-shadow: 0 2px 6px rgba(21,24,21,0.20);
+}
+
+
+@media (max-width: 600px) {
+
+	.img-footer {
+		margin-right:0;
+	}
+
+}
