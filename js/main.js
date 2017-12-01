@@ -1,5 +1,7 @@
+// page load
 document.addEventListener("DOMContentLoaded", function(event) { 
 
+	//smooth scroll
 	let callToAction = document.querySelector('#call-to-action');
 
 	callToAction.addEventListener('click', function(){
@@ -7,8 +9,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	})
 
 	function smoothScroll(elementId) {
-	    var MIN_PIXELS_PER_STEP = 5;
-	    var MAX_SCROLL_STEPS = 15;
+	    var MIN_PIXELS_PER_STEP = 0;
+	    var MAX_SCROLL_STEPS = 22;
 	    var target = document.getElementById(elementId);
 	    var scrollContainer = target;
 	    do {

@@ -4,6 +4,11 @@ footer {
 	padding:32px;
 	background:url(../img/footer-bg.jpg) no-repeat;
 	background-size:cover;
+
+	@include for-phone-only {
+		padding:16px;
+		text-align:center;
+	}
 }
 
 footer div.flex {
@@ -11,6 +16,18 @@ footer div.flex {
 	max-width:1024px;
 	margin:0;
 	margin:0 auto;
+
+	@include for-phone-only {
+		max-width:600px;
+		flex-wrap:wrap;
+	}
+}
+
+footer .flex-item {
+	@include for-phone-only {
+		margin:0 auto;
+		padding:16px 0;	
+	}
 }
 
 footer .flex-item img {
@@ -24,24 +41,4 @@ footer .flex-item img.margin-l-0 {
 
 footer .flex-item a {
 	text-decoration: none;
-}
-
-
-@media (max-width: 600px) {
-
-	footer {
-		padding:16px;
-		text-align:center;
-	}
-
-	footer div.flex {
-		max-width:600px;
-		flex-wrap:wrap;
-	}
-
-	footer .flex-item {
-		margin:0 auto;
-		padding:16px 0;
-	}
-
 }
