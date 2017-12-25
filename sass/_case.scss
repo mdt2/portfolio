@@ -1,0 +1,81 @@
+.case-hero {
+	width:100vw;
+	height:80vh;
+	max-width:100vw;
+	margin:0;
+	text-align:center;
+	z-index:1;
+	background:url('../img/work-meal-site-case.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+
+	@include for-phone-only {
+		background-position: center;
+	}
+}
+
+.case-study-content {
+	margin:0 auto;
+}
+
+.case-study-content h2 {
+	padding-top:72px;
+	padding-bottom: 0px;
+	padding-left:8px;
+	padding-right:8px;
+	font-family:$bold-font;
+	max-width: 1024px;
+	margin:0 auto;
+}
+
+.case-study-content p {
+	padding:48px;
+	max-width:400px;
+
+	@include for-tablet-down {
+		text-align:center;
+	}
+
+	@include for-phone-only {
+		padding:24px;
+	}
+}
+
+.case-study-content .case-screens {
+	background-color: #F3EDFF;
+	padding:48px;
+
+	@include for-phone-only {
+		padding:0;
+		padding-top:24px;
+		padding-bottom:24px;
+	}
+}
+
+.case-study-content .flex {
+	max-width:1440px;
+	margin:0 auto;
+	flex-wrap:wrap;
+}
+
+.case-study-content .flex-item {
+	max-width:200px;
+	height:150px;
+	margin:24px;
+	box-shadow: 2px 4px 10px rgba(0,0,0,0.1);
+}
+
+.case-comp {
+	max-width:1024px;
+	width:100%;
+}
+
+.case-showcase-image {
+	max-width:450px;
+	width:100%;
+}
+
+.case-footer {
+	background-image:none;
+	background-color: $light-gray;
+}

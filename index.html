@@ -25,10 +25,8 @@
 
     <!-- Fontawesome Icon fonts -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="font/font-awesome.min.css">
 
     <!-- Js -->
-    <script src="https://use.fontawesome.com/3f4d767388.js"></script>
     <script src="js/modernizr.js"></script>
     <script src="js/main.js"></script>
 
@@ -43,60 +41,70 @@
                 <li class="flex-item"><a href="#work">Portfolio</a></li>
                 <li class="flex-item"><a href="#about">About me</a></li>
             </ul>
+            </div>
+        </div>
         </div>
     </header>
     <!-- End Header -->
 
     <!-- Start Hero -->
-    <section id="slide-1" class="homeSlide">
-        <div class="hero flex bcg">
-            <div class="intro flex-item hs-container">
-                <h1>My name's Melissa.<br>I create with a keyboard.</h1>
-                <a href="#work.html">
-                    <button id="call-to-action">See my work <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></button>
-                </a>
-            </div>
+    <div class="hero flex">
+        <div class="intro flex-item hs-container">
+            <h1>My name's Melissa.<br>I create with a keyboard.</h1>
+            <a href="#work.html">
+                <button id="call-to-action">See my work <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></button>
+            </a>
         </div>
-    </section>
+    </div>
     <!-- End Hero -->
 
     <!-- Start Work Content -->
-    <div id="work" class="work">
+    <div class="work" id="work">
         <h2>Portfolio</h2>
         <div class="flex">
-            <div class="img-footer">
-                <img class="flex-item" src="img/work-hb-site.jpg" alt="Hello Baby website design"/>
-                <h3>Hello Baby design</h3>
-            </div>
-            <div class="img-footer">
-                <img class="flex-item" src="img/work-meal-site.jpg" alt="Meal Prep website design"/>
-                <h3>My Meals mockups</h3>
-            </div>
-            <div class="img-footer">
-                <img class="flex-item" src="img/work-macaroon-site.jpg" alt="Macaroon client website design"/>
-                <h3>The Little Things design/dev</h3>
-            </div>
-            <div class="img-footer">
-                <img class="flex-item" src="img/work-ham-menu.jpg" alt="Hello Baby website design"/>
-                <h3>CSS3 icon transforms</h3>
-            </div>
-            <div class="img-footer">
-                <img class="flex-item" src="img/work-quote-machine.jpg" alt="Meal Prep website design"/>
-                <h3>Random quote machine</h3>
-            </div>
-            <div class="img-footer">
-                <img class="flex-item" src="img/work-css-image.jpg" alt="Macaroon client website design"/>
-                <h3>CSS image</h3>
+            <div class="wrapper">
+                <div class="grid-item tall hovereffect">
+                    <img class="flex-item desktop-only" src="img/work-ham-icons-desktop.jpg" alt="three animated hamburger icons"/>
+                    <img class="flex-item phone-only" src="img/work-ham-icons-mobile.jpg" alt="three animated hamburger icons"/>
+                    <div class="overlay">
+                        <a class="info" href="#">CSS3 icon transforms</a>
+                    </div>
+                </div>
+                <div class="grid-item small hovereffect">
+                    <img class="flex-item" src="img/work-meal-site.jpg" alt="Meal Prep website design"/>
+                    <div class="overlay pointer">
+                        <a class="info pointer" href="meal-case.html">Meal Prep website UX design<div class="case-study-button">See case study <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid-item small hovereffect">
+                    <img class="flex-item" src="img/work-hellobaby-site.jpg" alt="Hello Baby website design"/>
+                    <div class="overlay">
+                        <a class="info" href="#">Hello Baby website design</a>
+                    </div>
+                </div>
+                <div class="grid-item large hovereffect">
+                    <img class="flex-item" src="img/work-drawerlibrary-code.jpg" alt="drawer library repository on github"/>
+                    <div class="overlay">
+                        <a class="info" id="lg" href="#">JavaScript drawer library</a>
+                    </div>
+                </div>
+                <div class="grid-item large hovereffect">
+                    <img class="flex-item" src="img/work-quote-machine.jpg" alt="random quote generator on codepen"/>
+                    <div class="overlay">
+                        <a class="info" id="lg" href="#">Random quote generator</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>    
+    </div>
     <!-- End Work Content -->
 
 
     <!-- Start About Content -->
     <div id="about" class="about">
         <h2>About Me</h2>
-        <img class="desktop-only" src="img/about-lg2.jpg" alt="photo of Melissa">
+        <img class="desktop-only" src="img/about-lg.jpg" alt="photo of Melissa">
         <img class="phone-only" src="img/about-sm.jpg" alt="photo of Melissa">
         <h1>My name’s Melissa. I’m from the Sunflower State, and I currently live in Clemson, SC. When I’m not programming, I love spending time with my dog, weight training, hiking, and traveling.</h1>
     </div> 

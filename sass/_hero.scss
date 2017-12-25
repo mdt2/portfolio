@@ -1,16 +1,10 @@
-/* Slide 1 */
-#slide-1 .bcg {
-	background:url(../img/hero@2x.png) no-repeat;
-	background-size:cover;
-	background-attachment: fixed;
-}
-
 .hero {
 	width:100vw;
 	height:100vh;
 	max-width:100vw;
-	/*background:url(../img/hero@2x.png) no-repeat;*/
-	/*background-size:cover;*/
+	background:url(../img/hero@2x.png) no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
 	margin:0;
 	text-align:center;
 }
@@ -27,3 +21,4 @@
 	margin:0 auto;
 	cursor: pointer;
 }
+
